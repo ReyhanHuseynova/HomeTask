@@ -1,0 +1,17 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Views</title>
+</head>
+<body>
+    <a asp-controller="Home" asp-action="Index">Ana sehife</a>
+    <a asp-controller="About" asp-action="Index">Haqqimizda</a>
+    <a asp-controller="Contact" asp-action="Index">Elaqe</a>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
